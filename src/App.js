@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import styles from './App.module.css';
 import TaskList from './Components/Tasks/TaskList';
@@ -14,9 +14,15 @@ const DUMMY_LIST = [
 ]
 
 function App() {
+  const [taskList, setTaskList] = useState(DUMMY_LIST)
+
+  const removeTaskHandler = (id) => {
+    setTaskList(prevList => prevList.filter(task => task.id !== id))
+  }
+
   return (
     <div className={styles.app}>
-      <TaskList itemsList={DUMMY_LIST} />
+      <TaskList itemsList={taskList} onRemoveTask={removeTaskHandler} />
     </div>
   );
 }

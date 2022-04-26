@@ -4,7 +4,11 @@ import Task from "./Task";
 import styles from './TaskList.module.css';
 
 const TaskList = props => {
-    const taskItemsList = props.itemsList.map(item => <Task id={item.id} text={item.text} />)
+    const removeTaskHandler = (id) => {
+        props.onRemoveTask(id)
+    }
+
+    const taskItemsList = props.itemsList.map(item => <Task id={item.id} text={item.text} onDelete={removeTaskHandler} />)
 
     if (taskItemsList.length === 0) {
         return <div className={styles.list}>
