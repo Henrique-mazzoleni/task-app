@@ -25,4 +25,9 @@
     border: 1px solid var(--primary-color);
     border-radius: 25px;
     padding: 5px 30px;
+    cursor: pointer;
+}
+
+.form input:focus {
+    border-bottom: 2px solid var(--primary-color);
 }

@@ -10,9 +10,9 @@ const TaskList = props => {
 
     const taskItemsList = props.itemsList.map(item => <Task key={item.id} id={item.id} text={item.text} onDelete={removeTaskHandler} />)
 
-    if (taskItemsList.length === 0) {
+    if (props.message) {
         return <div className={styles.list}>
-            <h2>No tasks found. Start adding some!</h2>
+            <h2>{props.message}</h2>
         </div>
     }
 

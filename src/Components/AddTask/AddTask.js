@@ -14,7 +14,7 @@ const AddTask = (props) => {
 
   return (
     <form className={styles.form} onSubmit={submitHandler}>
-      <input ref={taskInput} />
+      <input id="task" type="text" ref={taskInput} />
       <button type="submit">Add Task</button>
     </form>
   );

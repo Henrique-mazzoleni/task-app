@@ -1,6 +1,12 @@
 .task {
     font-size: 1.3rem;
     font-weight: bold;
+    border-bottom: 1px solid #bbb;
     margin: 10px;
+    padding-bottom: 10px;
     cursor: pointer;
+}
+
+.task:last-child {
+    border-bottom: none;
 }
