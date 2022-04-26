@@ -1,0 +1,11 @@
+.list {
+    width: 700px;
+    background-color: var(--light-color);
+    padding: 20px;
+    border-radius: 20px;
+    list-style-type: none;
+}
+
+.list h2 {
+    text-align: center;
+}
