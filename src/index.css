@@ -1,3 +1,10 @@
+:root {
+  --primary-color: #fb2e01;
+  --secondary-color: #ffe28a;
+  --dark-color: #333;
+  --light-color: #ddd;
+}
+
 body {
   margin: 0;
   padding: 0;
