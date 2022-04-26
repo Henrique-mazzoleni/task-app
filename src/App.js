@@ -21,11 +21,9 @@ function App() {
   const addTaskHandler = (task) => {
     const newTask = {
       id: Math.random(),
-      text: task
-    }
-    setTaskList((prevList) =>
-      [newTask, ...prevList]
-    );
+      text: task,
+    };
+    setTaskList((prevList) => [newTask, ...prevList]);
   };
 
   const removeTaskHandler = (id) => {

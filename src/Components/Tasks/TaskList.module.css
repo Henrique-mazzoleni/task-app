@@ -1,6 +1,7 @@
 .list {
     width: 700px;
     background-color: var(--light-color);
+    margin-top: 20px;
     padding: 20px;
     border-radius: 20px;
     list-style-type: none;

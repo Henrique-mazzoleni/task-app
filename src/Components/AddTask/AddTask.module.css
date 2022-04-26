@@ -1,0 +1,28 @@
+.form {
+    display: flex;
+    background-color: var(--light-color);
+    width: 700px;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.form input {
+    flex-grow: 1;
+    font-size: 1rem;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid var(--dark-color);
+    background-color: inherit;
+    margin-right: 40px;
+    padding: 10px;
+}
+
+.form button {
+    font-size: 1rem;
+    margin-right: 10px;
+    background-color: var(--primary-color);
+    color: var(--light-color);
+    border: 1px solid var(--primary-color);
+    border-radius: 25px;
+    padding: 5px 30px;
+}
