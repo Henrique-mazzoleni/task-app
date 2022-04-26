@@ -8,7 +8,7 @@ const TaskList = props => {
         props.onRemoveTask(id)
     }
 
-    const taskItemsList = props.itemsList.map(item => <Task id={item.id} text={item.text} onDelete={removeTaskHandler} />)
+    const taskItemsList = props.itemsList.map(item => <Task key={item.id} id={item.id} text={item.text} onDelete={removeTaskHandler} />)
 
     if (taskItemsList.length === 0) {
         return <div className={styles.list}>

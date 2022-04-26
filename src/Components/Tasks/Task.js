@@ -7,7 +7,7 @@ const Task = (props) => {
       props.onDelete(props.id)
   }
 
-  return <li onClick={deleteHandler} key={props.id} className={styles.task}>
+  return <li onClick={deleteHandler} className={styles.task}>
     {props.text}
   </li>;
 };
